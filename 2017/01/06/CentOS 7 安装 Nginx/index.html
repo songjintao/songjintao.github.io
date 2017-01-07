@@ -5,14 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hexo">
-    <title>CentOS 7.3 安装 Nginx - Hexo</title>
-    <meta name="author" content="John Doe">
+    <meta name="generator" content="宋金涛博客">
+    <title>CentOS 7.3 安装 Nginx - 宋金涛博客</title>
+    <meta name="author" content="宋金涛">
     
         <meta name="keywords" content="Nginx,安装,教程">
     
-    
-        <link rel="icon" href="http://upyun.geekap.com/gitblog-img/gravatar.jpg">
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
@@ -21,9 +19,9 @@
 <meta property="og:type" content="blog">
 <meta property="og:title" content="CentOS 7.3 安装 Nginx">
 <meta property="og:url" content="http://blog.geekap.com/2017/01/06/CentOS 7 安装 Nginx/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="宋金涛博客">
 <meta property="og:description" content="Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:">
-<meta property="og:updated_time" content="2017-01-06T11:46:08.000Z">
+<meta property="og:updated_time" content="2017-01-07T09:13:32.767Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS 7.3 安装 Nginx">
 <meta name="twitter:description" content="Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:">
@@ -32,11 +30,11 @@
         
     
     
-        <meta property="og:image" content="https://www.gravatar.com/avatar/75e7e8b59537027bdc1803a5fe2684b8?s=640"/>
+        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/gravatar.jpg"/>
     
     
-        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/city-750.jpg"/>
-        <meta class="swiftype" name="image" data-type="enum" content="http://upyun.geekap.com/gitblog-img/city-750.jpg" />
+        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/city-140.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://upyun.geekap.com/gitblog-img/city-140.jpg" />
     
     
         <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/cover.jpg"/>
@@ -57,17 +55,19 @@
 
     
         
+            
+        
     
 
 <header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
-        <a class="header-title-link" href="/ ">Hexo</a>
+        <a class="header-title-link" href="/ ">宋金涛博客</a>
     </div>
     
         
         
-            <img class="header-picture" src="https://www.gravatar.com/avatar/75e7e8b59537027bdc1803a5fe2684b8?s=90" alt="Foto de autor"/>
+            
         
         </a>
     
@@ -76,6 +76,8 @@
             <!-- Define author's picture -->
 
 
+
+        
     
 
 <nav id="sidebar" data-behavior="4">
@@ -83,11 +85,11 @@
         
             <div class="sidebar-profile">
                 <a href="/#about">
-                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/75e7e8b59537027bdc1803a5fe2684b8?s=110" alt="Foto de autor"/>
+                    <img class="sidebar-profile-picture" src="http://upyun.geekap.com/gitblog-img/gravatar.jpg" alt="Author&#39;s picture"/>
                 </a>
-                <h4 class="sidebar-profile-name">John Doe</h4>
+                <h4 class="sidebar-profile-name">宋金涛</h4>
                 
-                    <h5 class="sidebar-profile-bio"><p>author.bio</p>
+                    <h5 class="sidebar-profile-bio"><p>一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)</p>
 </h5>
                 
             </div>
@@ -103,7 +105,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-                        <span class="sidebar-button-desc">Inicio</span>
+                        <span class="sidebar-button-desc">Home</span>
                     </a>
             </li>
             
@@ -115,7 +117,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-                        <span class="sidebar-button-desc">Categorías</span>
+                        <span class="sidebar-button-desc">Categories</span>
                     </a>
             </li>
             
@@ -127,7 +129,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-                        <span class="sidebar-button-desc">Etiquetas</span>
+                        <span class="sidebar-button-desc">Tags</span>
                     </a>
             </li>
             
@@ -139,7 +141,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-                        <span class="sidebar-button-desc">Archivos</span>
+                        <span class="sidebar-button-desc">Archives</span>
                     </a>
             </li>
             
@@ -151,7 +153,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-                        <span class="sidebar-button-desc">Buscar</span>
+                        <span class="sidebar-button-desc">Search</span>
                     </a>
             </li>
             
@@ -163,13 +165,31 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-                        <span class="sidebar-button-desc">Acerca de</span>
+                        <span class="sidebar-button-desc">About</span>
                     </a>
             </li>
             
         </ul>
         
             <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/" target="_blank">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Og8NCAgKAw0ID3pLSxRZVVc" target="_blank">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
             
         </ul>
         
@@ -208,13 +228,13 @@
     <div class="post-meta">
     <time itemprop="datePublished" datetime="2017-01-06T09:12:21+08:00">
 	
-		    06 1月 2017
+		    1月 06, 2017
     	
     </time>
     
-        <span>en </span>
+        <span>in </span>
         
-    <a class="category-link" href="/categories/建站/">建站</a>
+    <a class="category-link" href="/categories/服务器/">服务器</a>
 
 
     
@@ -273,7 +293,7 @@
     <div id="post-footer" class="post-footer main-content-wrap">
         
             <div class="post-footer-tags">
-                <span class="text-color-light text-small">ETIQUETADO EN</span><br/>
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
     <a class="tag tag--primary tag--small t-link" href="/tags/Nginx/">Nginx</a> <a class="tag tag--primary tag--small t-link" href="/tags/linux/">linux</a> <a class="tag tag--primary tag--small t-link" href="/tags/安装/">安装</a> <a class="tag tag--primary tag--small t-link" href="/tags/教程/">教程</a>
 
@@ -284,17 +304,17 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/01/07/tranquilpeak主题的配置/"  data-tooltip="tranquilpeak主题的配置">
                 
                     <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                 </a>
             </li>
             <li class="post-action">
                 
                     <a class="post-action-btn btn btn--default tooltip--top" href="/2017/01/02/博客建设分享以及学习规划/" data-tooltip="博客建设分享及博客计划">
                 
-                    <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -341,7 +361,7 @@
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2017 John Doe. All Rights Reserved.
+        Copyrights &copy; 2017 宋金涛. All Rights Reserved.
     </span>
 </footer>
 
@@ -353,17 +373,17 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/01/07/tranquilpeak主题的配置/"  data-tooltip="tranquilpeak主题的配置">
                 
                     <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                 </a>
             </li>
             <li class="post-action">
                 
                     <a class="post-action-btn btn btn--default tooltip--top" href="/2017/01/02/博客建设分享以及学习规划/" data-tooltip="博客建设分享及博客计划">
                 
-                    <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -407,17 +427,17 @@
     <ul class="share-options">
         <li class="share-option">
             <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2017/01/06/CentOS 7 安装 Nginx/">
-                <i class="fa fa-google-plus"></i><span>Compartir en Google Plus</span>
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
             <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2017/01/06/CentOS 7 安装 Nginx/">
-                <i class="fa fa-facebook-official"></i><span>Compartir en Facebook</span>
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
             <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2017/01/06/CentOS 7 安装 Nginx/">
-                <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
     </ul>
@@ -430,6 +450,8 @@
 
 
     
+        
+    
 
 <div id="about">
     <div id="about-card">
@@ -437,21 +459,27 @@
             <i class="fa fa-remove"></i>
         </div>
         
-            <img id="about-card-picture" src="https://www.gravatar.com/avatar/75e7e8b59537027bdc1803a5fe2684b8?s=110" alt="Foto de autor"/>
+            <img id="about-card-picture" src="http://upyun.geekap.com/gitblog-img/gravatar.jpg" alt="Author&#39;s picture"/>
         
-            <h4 id="about-card-name">John Doe</h4>
+            <h4 id="about-card-name">宋金涛</h4>
         
-            <div id="about-card-bio"><p>author.bio</p>
+            <div id="about-card-bio"><p>一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)</p>
 </div>
         
         
             <div id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>author.job</p>
+                <p>前端工程师</p>
 
             </div>
         
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                河南省 郑州市
+            </div>
         
     </div>
 </div>
@@ -472,7 +500,7 @@
             </form>
         </div>
         <div class="modal-body">
-            <div class="no-result text-color-light text-center">no se encontraron artículos</div>
+            <div class="no-result text-color-light text-center">no post found</div>
             <div class="results">
                 
                 <div class="media">
@@ -504,7 +532,7 @@
                     
                     <div class="media-left">
                         <a class="link-unstyled" href="http://blog.geekap.com/2017/01/06/CentOS 7 安装 Nginx/">
-                            <img class="media-image" src="http://upyun.geekap.com/gitblog-img/city-750.jpg" width="90" height="90"/>
+                            <img class="media-image" src="http://upyun.geekap.com/gitblog-img/city-140.jpg" width="90" height="90"/>
                         </a>
                     </div>
                     
@@ -525,14 +553,39 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a class="link-unstyled" href="http://blog.geekap.com/2017/01/07/tranquilpeak主题的配置/">
+                            <img class="media-image" src="http://upyun.geekap.com/gitblog-img/city-750.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://blog.geekap.com/2017/01/07/tranquilpeak主题的配置/">
+                            <h3 class="media-heading">tranquilpeak主题的配置</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2017年1月7日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>之前讲了如何利用Hexo在github上建立blog,以及如何更换主题，步骤并不复杂，但是配置主题可是就没那么简单了。<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
             <p class="results-count text-medium"
-                data-message-zero="no se encontraron artículos"
-                data-message-one="1 artículo encontrado"
-                data-message-other="{n} artículos encontrados">
-                2 artículos encontrados
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                3 posts found
             </p>
         </div>
     </div>

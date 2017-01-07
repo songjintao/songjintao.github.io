@@ -1,26 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
+  <title>宋金涛博客</title>
+  <subtitle>宋金涛Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.geekap.com/"/>
-  <updated>2017-01-06T11:46:08.000Z</updated>
+  <updated>2017-01-07T09:15:24.434Z</updated>
   <id>http://blog.geekap.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>宋金涛</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>tranquilpeak主题的配置</title>
+    <link href="http://blog.geekap.com/2017/01/07/tranquilpeak%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>http://blog.geekap.com/2017/01/07/tranquilpeak主题的配置/</id>
+    <published>2017-01-07T09:12:21.000Z</published>
+    <updated>2017-01-07T09:15:24.434Z</updated>
+    
+    <content type="html"><![CDATA[<!-- excerpt --><br><strong>之前讲了如何利用Hexo在github上建立blog,以及如何更换主题，步骤并不复杂，但是配置主题可是就没那么简单了，博主在配置的过程中遇到了许许多多的问题，网上查阅了大量的资料，重新配置几次，还好最终被博主征服了.</strong></p>
+<h3 id="个性化配置"><a href="#个性化配置" class="headerlink" title="个性化配置"></a><strong>个性化配置</strong></h3><p><strong>头像:</strong><br>在主题的<code>_config.yml</code>文件内设置<code>picture</code>属性</p>
+<p><strong>地址信息:</strong><br>在主题的<code>_config.yml</code>文件内设置<code>location</code>属性</p>
+<p><strong>弹出框和侧栏的简介:</strong><br>主题目录的<code>layout/_partial/sidebar.ejs</code>和<code>about.ejs</code>文件，只修改markdown括号引号内的信息即可。<br>sidebar.ejs文件</p>
+<figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">主题个性化配置</a><ul class="tabs"><li class="tab active">js</li></ul></figcaption><div class="tabs-content"><figure class="highlight js" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (__(<span class="string">'author.bio'</span>)) { %&gt;</span><br><span class="line">    &lt;h5 class="sidebar-profile-bio"&gt;&lt;%- markdown(__('一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)')) %&gt;&lt;/h5&gt;</span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure></div></figure>
+<p>about.ejs文件</p>
+<figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">主题个性化配置</a><ul class="tabs"><li class="tab active">js</li></ul></figcaption><div class="tabs-content"><figure class="highlight js" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (__(<span class="string">'author.bio'</span>)) { %&gt;</span><br><span class="line">    &lt;div id="about-card-bio"&gt;&lt;%- markdown(__('一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)')) %&gt;&lt;/div&gt;</span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure></div></figure>
+<p><strong>职业信息:</strong><br>主题目录的<code>layout/_partial/about.ejs</code></p>
+<figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">主题个性化配置</a><ul class="tabs"><li class="tab active">js</li></ul></figcaption><div class="tabs-content"><figure class="highlight js" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (__(<span class="string">'author.job'</span>)) { %&gt;</span><br><span class="line">    &lt;div id="about-card-job"&gt;</span><br><span class="line">        &lt;i class="fa fa-briefcase"&gt;&lt;/i&gt;</span><br><span class="line">        &lt;br/&gt;</span><br><span class="line">        &lt;%- markdown(__('前端工程师')) %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% } %&gt;</span><br></pre></td></tr></tbody></table></figure></div></figure>
+<p><strong>名字:</strong><br>根目录的<code>_config.yml</code>文件修改<code>author</code>即可。</p>
+<h3 id="功能增强"><a href="#功能增强" class="headerlink" title="功能增强"></a><strong>功能增强</strong></h3><p><strong>配置分类、标签、存档:</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="string">"all-categories"</span></div><div class="line"></div><div class="line">hexo new page <span class="string">"all-tags"</span></div><div class="line"></div><div class="line">hexo new page <span class="string">"all-archives"</span></div></pre></td></tr></table></figure>
+<p>eg:<br>修改生成的三个模板文件<code>source/all-tags/index.md</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: <span class="string">"all-tags"</span></div><div class="line">layout: <span class="string">"all-tags"</span></div><div class="line">comments: <span class="literal">false</span></div><div class="line">---</div></pre></td></tr></table></figure>
+<p><strong>搜索</strong><br>此主题其实是内置了Algolia的，只需要简单配置下即可但是免费用户有限制。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-algoliasearch --save</div></pre></td></tr></table></figure>
+<p>在根目录的<code>_config.yml</code>文件内添加以下内容,将前三项换成自己的，需要去algolia官网注册。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">algolia:</div><div class="line">  appId: <span class="string">"Z7A3XW4R2I"</span></div><div class="line">  apiKey: <span class="string">"12db1ad54372045549ef465881c17e743"</span></div><div class="line">  adminApiKey: <span class="string">"40321c7c207e7f73b63a19aa24c4761b"</span></div><div class="line">  chunkSize: 5000</div><div class="line">  indexName: <span class="string">"tranquilpeak"</span></div><div class="line">  fields:</div><div class="line">    - title</div><div class="line">    - date</div><div class="line">    - permalink</div><div class="line">    - thumbnailImageUrl</div><div class="line">    - tags</div><div class="line">    - categories</div><div class="line">    - excerpt</div><div class="line">    - excerpt:strip</div></pre></td></tr></table></figure>
+<p><strong>RSS</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-feed --save</div></pre></td></tr></table></figure>
+<p>在根目录_config.yml文件内添加以下代码:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">	<span class="built_in">type</span>: atom</div><div class="line">	path: atom.xml</div><div class="line">	<span class="built_in">limit</span>: 20</div></pre></td></tr></table></figure>
+<p><strong>侧栏添加新的项目</strong></p>
+<p>在主题的<code>_config.yml</code>文件中 解注释 掉想要的功能。</p>
+<h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a><strong>写文章</strong></h3><p><strong>显示摘要</strong></p>
+<p>要想首页每篇文章只显示摘要需要在每篇文章的内容开始之前写上以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">我是摘要内容--此方法只在首页显示摘要。</div><div class="line">&lt;!-- excerpt --&gt;</div></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">我是摘要内容--此方法除了在首页显示摘要还会在文章页的文章最前面显示一遍。   </div><div class="line">&lt;!-- more --&gt;</div></pre></td></tr></table></figure>
+<p><strong>文章的属性配置</strong></p>
+<pre><code class="bash">title: 博客建设分享及博客计划
+date: 2017-01-02 17:12:21
+categories: <span class="string">'建站'</span>
+tags: [<span class="string">'计划'</span>,<span class="string">'建站'</span>,<span class="string">'Hexo'</span>]
+keywords:
+- <span class="string">'博客'</span>
+- hexo
+- <span class="string">'建站'</span>
+clearReading: <span class="literal">true</span>  //在文章页隐藏侧栏，以更好地阅读。
+thumbnailImage: http://upyun.geekap.com/gitblog-img/car-6-140.jpg  //首页文章列表显示的缩略图
+thumbnailImagePosition: left  //缩略图显示的位置，上下左右都可以
+autoThumbnailImage: <span class="literal">true</span>  // 开启后如果没有设置缩略图，会自动设置为图片画廊里的第一张，或者其他文章的图。
+metaAlignment: center  //文章页图片上的文字居中显示
+coverImage: http://upyun.geekap.com/gitblog-img/cover-v1.2.0.jpg  //文章页最上面的那个大图
+coverCaption: <span class="string">"Hexo建站分享"</span>  //大图下面的小标题
+coverMeta: <span class="keyword">in</span>  //图片上的文字显示在图片上，或者显示在图片外面
+coverSize: full  //大图显示的尺寸，full是全屏展示
+comments: <span class="literal">false</span>  //评论功能是否开启
+</code></pre>
+<h3 id="遇到的问题及解决方案"><a href="#遇到的问题及解决方案" class="headerlink" title="遇到的问题及解决方案: "></a><strong>遇到的问题及解决方案: </strong></h3><p><strong>设置头像后文章页面的左上角一直显示一张头像的原图，影响阅读。</strong></p>
+<p>解决方法:</p>
+<p>在主题目录的<code>layout/_partial/header.ejs</code>吧文件内唯一的的一个img删掉，1.9.1版本是在倒数第五行。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前讲了如何利用Hexo在github上建立blog,以及如何更换主题，步骤并不复杂，但是配置主题可是就没那么简单了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://blog.geekap.com/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
+    
+      <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CentOS 7.3 安装 Nginx</title>
     <link href="http://blog.geekap.com/2017/01/06/CentOS%207%20%E5%AE%89%E8%A3%85%20Nginx/"/>
     <id>http://blog.geekap.com/2017/01/06/CentOS 7 安装 Nginx/</id>
     <published>2017-01-06T01:12:21.000Z</published>
-    <updated>2017-01-06T11:46:08.000Z</updated>
+    <updated>2017-01-07T09:13:32.767Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --></p>
 <h2 id="为什么选择Nginx"><a href="#为什么选择Nginx" class="headerlink" title="为什么选择Nginx?"></a><strong>为什么选择Nginx?</strong></h2><p>Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:</p>
@@ -60,7 +141,7 @@
     
     </summary>
     
-      <category term="建站" scheme="http://blog.geekap.com/categories/%E5%BB%BA%E7%AB%99/"/>
+      <category term="服务器" scheme="http://blog.geekap.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
@@ -78,7 +159,7 @@
     <link href="http://blog.geekap.com/2017/01/02/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE%E5%88%86%E4%BA%AB%E4%BB%A5%E5%8F%8A%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/"/>
     <id>http://blog.geekap.com/2017/01/02/博客建设分享以及学习规划/</id>
     <published>2017-01-02T09:12:21.000Z</published>
-    <updated>2017-01-06T11:09:51.861Z</updated>
+    <updated>2017-01-07T09:17:09.861Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --><br><strong>经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上，不枉几天查阅各种资料文档，尝试各种框架、工具、库，虽然探索的过程很艰辛的但最终的的成果令人兴奋，也希望在新的一年技术能有更加精进。</strong></p>
 <p>在此贴上几天努力的成果 <a href="https://songjintao.github.io/" target="_blank" rel="external">songjintao.github.io</a></p>
@@ -141,6 +222,10 @@
     
       <category term="建站" scheme="http://blog.geekap.com/categories/%E5%BB%BA%E7%AB%99/"/>
     
+    
+      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
     
