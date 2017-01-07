@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-01-06T11:46:08.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS 7.3 安装 Nginx</title>
+    <link href="http://yoursite.com/2017/01/06/CentOS%207%20%E5%AE%89%E8%A3%85%20Nginx/"/>
+    <id>http://yoursite.com/2017/01/06/CentOS 7 安装 Nginx/</id>
+    <published>2017-01-06T01:12:21.000Z</published>
+    <updated>2017-01-06T11:46:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- excerpt --></p>
+<h2 id="为什么选择Nginx"><a href="#为什么选择Nginx" class="headerlink" title="为什么选择Nginx?"></a><strong>为什么选择Nginx?</strong></h2><p>Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:</p>
+<ul>
+<li>在高连接并发的情况下，Nginx是Apache服务器不错的替代品</li>
+<li>Nginx作为负载均衡服务器</li>
+<li>作为邮件代理服务器</li>
+<li>Nginx 是一个安装非常的简单 , 配置文件非常简洁还能够支持perl语法,Bugs非常少的服务器.</li>
+</ul>
+<h2 id="测试环境"><a href="#测试环境" class="headerlink" title="测试环境"></a><strong>测试环境</strong></h2><ul>
+<li>windows 10 专业版 1607</li>
+<li>VirtualBox 5.1.12 r112440 (Qt5.6.2)</li>
+<li>CentOS release 7.3.1611</li>
+<li>Nginx 1.11.8</li>
+</ul>
+<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a><strong>安装依赖</strong></h2><p>首先由于nginx的一些模块依赖一些lib库，所以在安装nginx之前，必须先安装这些lib库，这些依赖库主要有g++、gcc、openssl-devel、pcre-devel和zlib-devel 所以执行如下命令安装:<br> <figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com" target="_blank" rel="external">依赖安装</a><ul class="tabs"><li class="tab active">nginx</li></ul></figcaption><div class="tabs-content"><figure class="highlight" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$   yum install gcc-c++</span><br><span class="line"></span><br><span class="line">$   yum install pcre pcre-devel </span><br><span class="line"></span><br><span class="line">$   yum install zlib zlib-devel  </span><br><span class="line"></span><br><span class="line">$   yum install openssl openssl--devel</span><br></pre></td></tr></tbody></table></figure></div></figure></p>
+<p>或者简单点一起安装:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel</div></pre></td></tr></table></figure></p>
+<h2 id="源码方式安装Nginx"><a href="#源码方式安装Nginx" class="headerlink" title="源码方式安装Nginx"></a><strong>源码方式安装Nginx</strong></h2><p>首先进入/usr/local目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  <span class="built_in">cd</span> /usr/<span class="built_in">local</span></div></pre></td></tr></table></figure></p>
+<p>从官网下载最新版的nginx<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   wget http://nginx.org/download/nginx-1.11.8.tar.gz</div></pre></td></tr></table></figure></p>
+<p>解压nginx压缩包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   tar -zxvf nginx-1.11.8.tar.gz</div></pre></td></tr></table></figure></p>
+<p>会产生一个nginx-1.11.8 目录，这时进入nginx-1.11.8目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   <span class="built_in">cd</span>  nginx-1.11.8</div></pre></td></tr></table></figure></p>
+<p>接下来安装，可以使用–prefix参数指定nginx安装的目录,make、make install安装<br><figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com" target="_blank" rel="external">Nginx安装</a><ul class="tabs"><li class="tab active">nginx</li></ul></figcaption><div class="tabs-content"><figure class="highlight" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$   ./configure   # 默认安装在/usr/local/nginx-1.11.8</span><br><span class="line"></span><br><span class="line">$   make  </span><br><span class="line"></span><br><span class="line">$   make install</span><br></pre></td></tr></tbody></table></figure></div></figure></p>
+<p>或者用yum的方式安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$  yum install -y nginx</div></pre></td></tr></table></figure></p>
+<h2 id="配置防火墙-开启80端口"><a href="#配置防火墙-开启80端口" class="headerlink" title="配置防火墙 开启80端口"></a><strong>配置防火墙 开启80端口</strong></h2><p>nginx默认端口为80端口，但CentOS 7.2默认不开启80端口，需要手动添加80端口的权限。由于centos 7版本以后默认使用firewalld后，网上关于iptables的设置方法已经不管用了，所以根本就别想用配置iptables做啥，根本没用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   firewall-cmd --zone=public --add-port=80/tcp --permanent</div></pre></td></tr></table></figure></p>
+<p>别忘了更新防火墙的配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   firewall-cmd --reload</div></pre></td></tr></table></figure></p>
+<p>重启nginx<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   nginx <span class="_">-s</span> reload</div></pre></td></tr></table></figure></p>
+<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a><strong>完成</strong></h2><p>打开浏览器访问Linux的IP，就可以看到 nginx的欢迎页了Welcome to nginx!</p>
+<h2 id="可能用到的命令："><a href="#可能用到的命令：" class="headerlink" title="可能用到的命令："></a><strong>可能用到的命令：</strong></h2><p>查看ip地址命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   ip addr</div></pre></td></tr></table></figure></p>
+<p>安装telnet客户端<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   yum install telnet</div></pre></td></tr></table></figure></p>
+<p>安装telnet服务端<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   yum install telnet-server</div></pre></td></tr></table></figure></p>
+<p>安装wget<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   yum -y install wget</div></pre></td></tr></table></figure></p>
+<p>安装ifconfig<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$   yum install net-tools</div></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:&lt;br&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="Nginx" scheme="http://yoursite.com/tags/Nginx/"/>
+    
+      <category term="安装" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客建设分享及博客计划</title>
+    <link href="http://yoursite.com/2017/01/02/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE%E5%88%86%E4%BA%AB%E4%BB%A5%E5%8F%8A%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/"/>
+    <id>http://yoursite.com/2017/01/02/博客建设分享以及学习规划/</id>
+    <published>2017-01-02T09:12:21.000Z</published>
+    <updated>2017-01-06T11:09:51.861Z</updated>
+    
+    <content type="html"><![CDATA[<!-- excerpt --><br><strong>经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上，不枉几天查阅各种资料文档，尝试各种框架、工具、库，虽然探索的过程很艰辛的但最终的的成果令人兴奋，也希望在新的一年技术能有更加精进。</strong></p>
+<p>在此贴上几天努力的成果 <a href="https://songjintao.github.io/" target="_blank" rel="external">songjintao.github.io</a></p>
+<hr>
+<h2 id="建站简述"><a href="#建站简述" class="headerlink" title="建站简述"></a>建站简述</h2><p>讲过几天的探索，学习了各种各样的建站方式，也简单尝试了几种，最终决定使用 <strong><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></strong>，官方宣传口号为:<strong>快速、简洁且高效的博客框架</strong><br>拥有以下特点:</p>
+<ul>
+<li><strong>超快速度</strong><ul>
+<li>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</li>
+</ul>
+</li>
+<li><strong>支持 Markdown</strong><ul>
+<li>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</li>
+</ul>
+</li>
+<li><strong>一键部署</strong><ul>
+<li>只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。</li>
+</ul>
+</li>
+<li><strong>丰富的插件</strong><ul>
+<li>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</li>
+</ul>
+</li>
+</ul>
+<p>Hexo不但功能强大，可扩展性强，并且简单易用，只需要电脑中有<strong>nodejs环境</strong>和<strong>git</strong>，接下来只需要简单的输入几条命令你的github-pages博客系统便马上可以线了，是不是心动啦，快来试试吧。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><ul>
+<li>安装并配置nodejs环境</li>
+<li>安装git</li>
+<li>拥有github账号，并创建一个名字为username.github.io的仓库，username为你的用户名。</li>
+</ul>
+<h2 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a><strong>开始安装</strong></h2><p><strong>首先创建一个工程目录，进入根目录输入以下指令：</strong></p>
+ <figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com" target="_blank" rel="external">Hexo安装</a><ul class="tabs"><li class="tab active">cmd</li></ul></figcaption><div class="tabs-content"><figure class="highlight cmd" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g    #安装Hexo</span><br><span class="line"></span><br><span class="line">$ hexo init    #初始化Hexo</span><br><span class="line">     </span><br><span class="line">$ npm install    #安装所有依赖包 	</span><br><span class="line">      	</span><br><span class="line">$ hexo server    #启动服务</span><br></pre></td></tr></tbody></table></figure></div></figure>
+<h2 id="安装完成–调试"><a href="#安装完成–调试" class="headerlink" title="安装完成–调试"></a><strong>安装完成–调试</strong></h2><p><strong>执行 <code>$ hexo server</code> 后在浏览器中输入<code>localhost:4000</code>映入眼帘的的便是你的博客主页。</strong></p>
+<h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2><ol>
+<li>Hexo默认的landscape主题。要是你觉得默认主题不好看，没关系，Hexo官方网站提供多达91款<strong><a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a></strong>，任你挑选。</li>
+<li>主题的使用也很简单。在Hexo主题列表选择好心仪的主题后，进入主题的github项目，下载到你的博客目录themes下，或者使用git命令直接克隆到本地。</li>
+<li>在博客根目录的<code>_config.yml</code>文件中将theme变量的值更改为新主题文件夹的名字，当然了，主题文件夹名也是可以任意更改的。</li>
+<li>然后刷新网页，即可看到属于你炫酷的博客。</li>
+</ol>
+<h2 id="上线到github-pages"><a href="#上线到github-pages" class="headerlink" title="上线到github-pages"></a>上线到github-pages</h2><p>在本地测试成功后，接下来就该把博客上线到github为广大开发者免费提供的静态网页服务器github-pages上了。</p>
+<ul>
+<li><p><strong>首先继续配置<code>_config.yml</code>文件，设置deploy</strong></p>
+<figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com" target="_blank" rel="external">Hexo配置</a><ul class="tabs"><li class="tab active">yml</li></ul></figcaption><div class="tabs-content"><figure class="highlight yml" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"></span><br><span class="line"><span class="attr">  repo:</span> https://github.com/github用户名/github用户名.github.io</span><br></pre></td></tr></tbody></table></figure></div></figure>
+</li>
+<li><p><strong>最后输入命令，生成静态网页，并部署到你的github仓库，你即可在浏览器中输入<code>github用户名.github.io</code>访问你的博客了。</strong></p>
+<figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com" target="_blank" rel="external">Hexo部署</a><ul class="tabs"><li class="tab active">cmd</li></ul></figcaption><div class="tabs-content"><figure class="highlight cmd" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate    #生成静态页面</span><br><span class="line"></span><br><span class="line">$ hexo deploy   #部署网站到你的github仓库，根据_config.yml中repo所填的github地址为准。</span><br></pre></td></tr></tbody></table></figure></div></figure></li>
+<li><strong>接下来你需要的做的就是新建一篇文章，并使用markdown编辑器开始你的博客之旅了。</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new  &lt;title&gt;    <span class="comment">#title为文章的标题</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h2><p>经过博主对比几个有名的在线markdown编辑器，推荐使用<strong><a href="https://stackedit.io/" target="_blank" rel="external">StackEditor</a></strong>,当然你要是有更好的选择也可以告诉博主。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h2><p>由于github是国外的服务器，访问较慢，建议将博客的图片放到七牛或者又拍云或者阿里云的OSS上。</p>
+<h2 id="建站小结"><a href="#建站小结" class="headerlink" title="建站小结"></a>建站小结</h2><p>以上简述了Hexo博客的建设，如若还有不懂请查阅Hexo的<strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档</a></strong>，若是依然无法解决可以联系博主。</p>
+<h2 id="博客规划"><a href="#博客规划" class="headerlink" title="博客规划"></a>博客规划</h2><p>博客到此就已经建设完成，接下来开始记录学习中遇到的问题，学习技巧，新技术的动态，并分享一些好的想法，还有生活、学习、工作中的一些所见所闻所感。愿大家一起见证我以及我的博客点点滴滴的成长。</p>
+<p><img src="http://oj5xzgnkr.bkt.clouddn.com/anzai11.gif" alt="enter image description here"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="计划" scheme="http://yoursite.com/tags/%E8%AE%A1%E5%88%92/"/>
+    
+      <category term="建站" scheme="http://yoursite.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
