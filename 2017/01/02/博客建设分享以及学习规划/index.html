@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="宋金涛博客">
 <meta property="og:description" content="经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上。">
 <meta property="og:image" content="http://oj5xzgnkr.bkt.clouddn.com/anzai11.gif">
-<meta property="og:updated_time" content="2017-01-08T13:45:42.000Z">
+<meta property="og:updated_time" content="2017-01-08T13:56:59.802Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客建设分享及博客计划">
 <meta name="twitter:description" content="经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上。">
@@ -298,9 +298,9 @@
 <h2 id="上线到github-pages"><a href="#上线到github-pages" class="headerlink" title="上线到github-pages"></a>上线到github-pages</h2><p>在本地测试成功后，接下来就该把博客上线到github为广大开发者免费提供的静态网页服务器github-pages上了。</p>
 <ul>
 <li><strong>首先继续配置<code>_config.yml</code>文件，设置deploy</strong><figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">Hexo配置</a><ul class="tabs"><li class="tab active">yml</li></ul></figcaption><div class="tabs-content"><figure class="highlight yml" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"></span><br><span class="line"><span class="attr">  repo:</span> https://github.com/github用户名/github用户名.github.io</span><br></pre></td></tr></tbody></table></figure></div></figure>
+ 安装hexo的git插件 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 <ul>
 <li><strong>最后输入命令，生成静态网页，并部署到你的github仓库，你即可在浏览器中输入<code>github用户名.github.io</code>访问你的博客了。</strong><figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">Hexo部署</a><ul class="tabs"><li class="tab active">cmd</li></ul></figcaption><div class="tabs-content"><figure class="highlight cmd" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate    #生成静态页面</span><br><span class="line"></span><br><span class="line">$ hexo deploy   #部署网站到你的github仓库，根据_config.yml中repo所填的github地址为准。</span><br></pre></td></tr></tbody></table></figure></div></figure></li>
 <li><strong>接下来你需要的做的就是新建一篇文章，并使用markdown编辑器开始你的博客之旅了。</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new  &lt;title&gt;    <span class="comment">#title为文章的标题</span></div></pre></td></tr></table></figure>
