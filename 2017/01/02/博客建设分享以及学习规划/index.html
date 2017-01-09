@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="宋金涛博客">
 <meta property="og:description" content="经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上。">
 <meta property="og:image" content="http://oj5xzgnkr.bkt.clouddn.com/anzai11.gif">
-<meta property="og:updated_time" content="2017-01-08T16:14:10.786Z">
+<meta property="og:updated_time" content="2017-01-09T02:15:35.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客建设分享及博客计划">
 <meta name="twitter:description" content="经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上。">
@@ -261,7 +261,7 @@
             <!-- excerpt --><br><strong>经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上，不枉几天查阅各种资料文档，尝试各种框架、工具、库，虽然探索的过程很艰辛的但最终的的成果令人兴奋，也希望在新的一年技术能有更加精进。</strong></p>
 <p>在此贴上几天努力的成果 <a href="https://songjintao.github.io/" target="_blank" rel="external">songjintao.github.io</a></p>
 <hr>
-<h2 id="建站简述"><a href="#建站简述" class="headerlink" title="建站简述"></a>建站简述</h2><p>讲过几天的探索，学习了各种各样的建站方式，也简单尝试了几种，最终决定使用 <strong><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></strong>，官方宣传口号为:<strong>快速、简洁且高效的博客框架</strong><br>拥有以下特点:</p>
+<h2 id="一、建站简述"><a href="#一、建站简述" class="headerlink" title="一、建站简述"></a>一、建站简述</h2><p>讲过几天的探索，学习了各种各样的建站方式，也简单尝试了几种，最终决定使用 <strong><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></strong>，官方宣传口号为:<strong>快速、简洁且高效的博客框架</strong><br>拥有以下特点:</p>
 <ul>
 <li><strong>超快速度</strong><ul>
 <li>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</li>
@@ -281,35 +281,46 @@
 </li>
 </ul>
 <p>Hexo不但功能强大，可扩展性强，并且简单易用，只需要电脑中有<strong>nodejs环境</strong>和<strong>git</strong>，接下来只需要简单的输入几条命令你的github-pages博客系统便马上可以线了，是不是心动啦，快来试试吧。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><ul>
+<h2 id="二、准备工作"><a href="#二、准备工作" class="headerlink" title="二、准备工作"></a><strong>二、准备工作</strong></h2><ul>
 <li>安装并配置nodejs环境</li>
 <li>安装git</li>
 <li>拥有github账号，并创建一个名字为username.github.io的仓库，username为你的用户名。</li>
 </ul>
-<h2 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a><strong>开始安装</strong></h2><p><strong>首先创建一个工程目录，进入根目录输入以下指令：</strong></p>
+<h2 id="三、开始安装"><a href="#三、开始安装" class="headerlink" title="三、开始安装"></a><strong>三、开始安装</strong></h2><p><strong>首先创建一个工程目录，进入根目录输入以下指令：</strong></p>
  <figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">Hexo安装</a><ul class="tabs"><li class="tab active">cmd</li></ul></figcaption><div class="tabs-content"><figure class="highlight cmd" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g    #安装Hexo</span><br><span class="line"></span><br><span class="line">$ hexo init    #初始化Hexo</span><br><span class="line">     </span><br><span class="line">$ npm install    #安装所有依赖包 	</span><br><span class="line">      	</span><br><span class="line">$ hexo server    #启动服务</span><br></pre></td></tr></tbody></table></figure></div></figure>
-<h2 id="安装完成–调试"><a href="#安装完成–调试" class="headerlink" title="安装完成–调试"></a><strong>安装完成–调试</strong></h2><p><strong>执行 <code>$ hexo server</code> 后在浏览器中输入<code>localhost:4000</code>映入眼帘的的便是你的博客主页。</strong></p>
-<h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2><ol>
+<h2 id="四、安装完成–调试"><a href="#四、安装完成–调试" class="headerlink" title="四、安装完成–调试"></a><strong>四、安装完成–调试</strong></h2><p><strong>执行 <code>$ hexo server</code> 后在浏览器中输入<code>localhost:4000</code>映入眼帘的的便是你的博客主页。</strong></p>
+<h2 id="五、更改主题"><a href="#五、更改主题" class="headerlink" title="五、更改主题"></a>五、更改主题</h2><ol>
 <li>Hexo默认的landscape主题。要是你觉得默认主题不好看，没关系，Hexo官方网站提供多达91款<strong><a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a></strong>，任你挑选。</li>
 <li>主题的使用也很简单。在Hexo主题列表选择好心仪的主题后，进入主题的github项目，下载到你的博客目录themes下，或者使用git命令直接克隆到本地。</li>
 <li>在博客根目录的<code>_config.yml</code>文件中将theme变量的值更改为新主题文件夹的名字，当然了，主题文件夹名也是可以任意更改的。</li>
 <li>然后刷新网页，即可看到属于你炫酷的博客。</li>
 </ol>
-<h2 id="上线到github-pages"><a href="#上线到github-pages" class="headerlink" title="上线到github-pages"></a>上线到github-pages</h2><p>在本地测试成功后，接下来就该把博客上线到github为广大开发者免费提供的静态网页服务器github-pages上了。</p>
-<ul>
-<li><strong>首先继续配置<code>_config.yml</code>文件，设置deploy</strong><figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">Hexo配置</a><ul class="tabs"><li class="tab active">yml</li></ul></figcaption><div class="tabs-content"><figure class="highlight yml" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"></span><br><span class="line"><span class="attr">  repo:</span> https://github.com/github用户名/github用户名.github.io</span><br></pre></td></tr></tbody></table></figure></div></figure></li>
-<li><strong>安装hexo的git插件</strong> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><strong>最后输入命令，生成静态网页，并部署到你的github仓库，你即可在浏览器中输入<code>github用户名.github.io</code>访问你的博客了。</strong><figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">Hexo部署</a><ul class="tabs"><li class="tab active">cmd</li></ul></figcaption><div class="tabs-content"><figure class="highlight cmd" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate    #生成静态页面</span><br><span class="line"></span><br><span class="line">$ hexo deploy   #部署网站到你的github仓库，根据_config.yml中repo所填的github地址为准。</span><br></pre></td></tr></tbody></table></figure></div></figure></li>
-<li><strong>接下来你需要的做的就是新建一篇文章，并使用markdown编辑器开始你的博客之旅了。</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new  &lt;title&gt;    <span class="comment">#title为文章的标题</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="markdown编辑器"><a href="#markdown编辑器" class="headerlink" title="markdown编辑器"></a>markdown编辑器</h2><p>经过博主对比几个有名的在线markdown编辑器，推荐使用<strong><a href="https://stackedit.io/" target="_blank" rel="external">StackEditor</a></strong>,当然你要是有更好的选择也可以告诉博主。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h2><p>由于github是国外的服务器，访问较慢，建议将博客的图片放到七牛或者又拍云或者阿里云的OSS上。</p>
-<h2 id="建站小结"><a href="#建站小结" class="headerlink" title="建站小结"></a>建站小结</h2><p>以上简述了Hexo博客的建设，如若还有不懂请查阅Hexo的<strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档</a></strong>，若是依然无法解决可以联系博主。</p>
-<h2 id="博客规划"><a href="#博客规划" class="headerlink" title="博客规划"></a>博客规划</h2><p>博客到此就已经建设完成，接下来开始记录学习中遇到的问题，学习技巧，新技术的动态，并分享一些好的想法，还有生活、学习、工作中的一些所见所闻所感。愿大家一起见证我以及我的博客点点滴滴的成长。</p>
+<h2 id="六、上线到github-pages"><a href="#六、上线到github-pages" class="headerlink" title="六、上线到github-pages"></a>六、上线到github-pages</h2><p>在本地测试成功后，接下来就该把博客上线到github为广大开发者免费提供的静态网页服务器github-pages上了。</p>
+<p><strong>1. 首先继续配置<code>_config.yml</code>文件，设置deploy</strong></p>
+<pre><code>{% tabbed_codeblock 'Hexo配置' http://blog.geekap.com %}
+			<!-- tab yml -->
+	deploy:
+
+	type: git
+
+	repo: https://github.com/github用户名/github用户名.github.io
+	<!-- endtab -->
+	{% endtabbed_codeblock %}
+</code></pre><p><strong>2. 安装hexo的git插件</strong><br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p><strong>3. 最后输入命令，生成静态网页，并部署到你的github仓库，你即可在浏览器中输入<code>github用户名.github.io</code>访问你的博客了。</strong></p>
+<pre><code>{% tabbed_codeblock 'Hexo部署' http://blog.geekap.com %}
+			<!-- tab cmd -->
+		$ hexo generate    #生成静态页面
+		
+		$ hexo deploy   #部署网站到你的github仓库，根据_config.yml中repo所填的github地址为准。
+	<!-- endtab -->
+	{% endtabbed_codeblock %}
+</code></pre><p><strong>4. 接下来你需要的做的就是新建一篇文章，并使用markdown编辑器开始你的博客之旅了。</strong></p>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new  &lt;title&gt;    <span class="comment">#title为文章的标题</span></div></pre></td></tr></table></figure>
+</code></pre><h2 id="七、markdown编辑器"><a href="#七、markdown编辑器" class="headerlink" title="七、markdown编辑器"></a>七、markdown编辑器</h2><p>经过博主对比几个有名的在线markdown编辑器，推荐使用<strong><a href="https://stackedit.io/" target="_blank" rel="external">StackEditor</a></strong>,当然你要是有更好的选择也可以告诉博主。</p>
+<h2 id="八、注意"><a href="#八、注意" class="headerlink" title="八、注意:"></a>八、注意:</h2><p>由于github是国外的服务器，访问较慢，建议将博客的图片放到七牛或者又拍云或者阿里云的OSS上。</p>
+<h2 id="九、建站小结"><a href="#九、建站小结" class="headerlink" title="九、建站小结"></a>九、建站小结</h2><p>以上简述了Hexo博客的建设，如若还有不懂请查阅Hexo的<strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档</a></strong>，若是依然无法解决可以联系博主。</p>
+<h2 id="十、博客规划"><a href="#十、博客规划" class="headerlink" title="十、博客规划"></a>十、博客规划</h2><p>博客到此就已经建设完成，接下来开始记录学习中遇到的问题，学习技巧，新技术的动态，并分享一些好的想法，还有生活、学习、工作中的一些所见所闻所感。愿大家一起见证我以及我的博客点点滴滴的成长。</p>
 <p><img src="http://oj5xzgnkr.bkt.clouddn.com/anzai11.gif" alt="&#39;安仔&#39;"></p>
             
         </div>
