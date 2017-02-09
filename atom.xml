@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.geekap.com/"/>
-  <updated>2017-01-09T00:53:52.704Z</updated>
+  <updated>2017-02-09T12:20:51.103Z</updated>
   <id>http://blog.geekap.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ReactNative-Ionic开发流程</title>
+    <link href="http://blog.geekap.com/2017/02/09/ionic%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/"/>
+    <id>http://blog.geekap.com/2017/02/09/ionic开发日志/</id>
+    <published>2017-02-09T12:10:20.000Z</published>
+    <updated>2017-02-09T12:20:51.103Z</updated>
+    
+    <content type="html"><![CDATA[<!-- excerpt --></p>
+<h2 id="ionic官方的介绍"><a href="#ionic官方的介绍" class="headerlink" title="ionic官方的介绍:"></a>ionic官方的介绍:</h2><p><strong>Ionic(ionicframework)一款接近原生的Html5移动App开发框架　会html css js就可以开发app　创建精彩的应用 从这里开始。</strong></p>
+<h2 id="ReactNative的官方介绍"><a href="#ReactNative的官方介绍" class="headerlink" title="ReactNative的官方介绍:"></a>ReactNative的官方介绍:</h2><p><strong>React Native使你能够在Javascript和React的基础上获得完全一致的开发体验，构建世界一流的原生APP。</strong></p>
+<p><strong>React Native着力于提高多平台开发的开发效率 —— 仅需学习一次，编写任何平台。(Learn once, write anywhere)。</strong></p>
+<h2 id="接下来为大家奉上开发一个Ionic-ReactNative应用的流程。"><a href="#接下来为大家奉上开发一个Ionic-ReactNative应用的流程。" class="headerlink" title="接下来为大家奉上开发一个Ionic ReactNative应用的流程。"></a>接下来为大家奉上开发一个Ionic ReactNative应用的流程。</h2><ol>
+<li><p>安装java jdk运行环境并<a href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank" rel="external">配置环境变量</a>;</p>
+</li>
+<li><p><a href="http://jingyan.baidu.com/article/ad310e80a9328a1849f49e30.html" target="_blank" rel="external">安装Android Studio</a>并配置环境变量;</p>
+</li>
+</ol>
+<p>3.<br>    <figure class="codeblock codeblock--tabbed"><figcaption><a href="http://blog.geekap.com">cmd</a><ul class="tabs"><li class="tab active">cmd</li></ul></figcaption><div class="tabs-content"><figure class="highlight cmd" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ionic <span class="built_in">start</span> myapp tabs 使用这个命令创建一个App工程</span><br><span class="line"></span><br><span class="line">ionic serve 使用这个命令启动应用，会自动在浏览器中打开应用</span><br><span class="line"></span><br><span class="line">ionic platform add android或者ionic platform add ios 这个命令是为工程添加平台编译选项</span><br><span class="line"></span><br><span class="line">ionic build android或者ionic build ios 进行编译</span><br></pre></td></tr></tbody></table></figure></div></figure></p>
+<ol>
+<li>之后会在 prj\platforms\android\build\outputs\apk目录下看到已经编译完成的apk文件，把他装到虚拟机或者手机上就可以看到效果了。</li>
+</ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;进过今天无数的踩坑，终于使用Ionic ReactNative成功编译出一个安卓Demo应用。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Ionic" scheme="http://blog.geekap.com/categories/Ionic/"/>
+    
+    
+      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Ionic" scheme="http://blog.geekap.com/tags/Ionic/"/>
+    
+      <category term="ReactNative" scheme="http://blog.geekap.com/tags/ReactNative/"/>
+    
+  </entry>
   
   <entry>
     <title>tranquilpeak主题的配置</title>
@@ -68,15 +107,15 @@
       <category term="建站" scheme="http://blog.geekap.com/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
       <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
+    
+      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -130,11 +169,11 @@
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
       <category term="linux" scheme="http://blog.geekap.com/tags/linux/"/>
     
       <category term="Nginx" scheme="http://blog.geekap.com/tags/Nginx/"/>
-    
-      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -219,13 +258,13 @@
       <category term="建站" scheme="http://blog.geekap.com/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
+    
+      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
     
