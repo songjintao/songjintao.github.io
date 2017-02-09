@@ -21,10 +21,12 @@
 <meta property="og:url" content="http://blog.geekap.com/2017/02/09/ionic开发日志/index.html">
 <meta property="og:site_name" content="宋金涛博客">
 <meta property="og:description" content="经过今天无数的踩坑，终于使用Ionic ReactNative成功编译出一个安卓Demo应用。">
-<meta property="og:updated_time" content="2017-02-09T12:48:44.176Z">
+<meta property="og:image" content="http://upyun.geekap.com/ornament/dongtu1.gif">
+<meta property="og:updated_time" content="2017-02-09T12:58:54.889Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ReactNative-Ionic开发流程">
 <meta name="twitter:description" content="经过今天无数的踩坑，终于使用Ionic ReactNative成功编译出一个安卓Demo应用。">
+<meta name="twitter:image" content="http://upyun.geekap.com/ornament/dongtu1.gif">
     
     
         
@@ -264,9 +266,10 @@
 <p>  <strong>React Native着力于提高多平台开发的开发效率 —— 仅需学习一次，编写任何平台。(Learn once, write anywhere)。</strong></p>
 </li>
 </ul>
-<hr>
-<h2 id="接下来为大家奉上开发ReactNative-Ionic应用的流程。"><a href="#接下来为大家奉上开发ReactNative-Ionic应用的流程。" class="headerlink" title="接下来为大家奉上开发ReactNative-Ionic应用的流程。"></a>接下来为大家奉上开发ReactNative-Ionic应用的流程。</h2><p>1.安装java jdk运行环境并<a href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank" rel="external">配置环境变量</a>;</p>
-<p>2.<a href="http://jingyan.baidu.com/article/ad310e80a9328a1849f49e30.html" target="_blank" rel="external">安装Android Studio</a>并配置环境变量;</p>
+<center><img src="http://upyun.geekap.com/ornament/dongtu1.gif" alt="动图"></center>
+
+<h2 id="接下来为大家奉上开发ReactNative-Ionic应用的流程。"><a href="#接下来为大家奉上开发ReactNative-Ionic应用的流程。" class="headerlink" title="接下来为大家奉上开发ReactNative-Ionic应用的流程。"></a>接下来为大家奉上开发ReactNative-Ionic应用的流程。</h2><p>1.安装java jdk运行环境并<a href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank" rel="external">配置环境变量</a>;<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">在命令窗口分别输入`java`和`javac` 验证安装配置状态</div></pre></td></tr></table></figure></p>
+<p>2.<a href="http://jingyan.baidu.com/article/ad310e80a9328a1849f49e30.html" target="_blank" rel="external">安装Android Studio</a>并配置环境变量;<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">在命令窗口分别输入`android`和`adb` 验证安装配置状态</div></pre></td></tr></table></figure></p>
 <p>3.在全英文路径的目录里输入以下命令:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ionic <span class="built_in">start</span> myapp tabs 使用这个命令创建一个App工程</div><div class="line"></div><div class="line">ionic serve 使用这个命令启动应用，会自动在浏览器中打开应用</div><div class="line"></div><div class="line">ionic platform add android或者ionic platform add ios 这个命令是为工程添加平台编译选项</div><div class="line"></div><div class="line">ionic build android或者ionic build ios 进行编译</div></pre></td></tr></table></figure>
 <p>4.之后会在 <code>prj\platforms\android\build\outputs\apk</code> 目录下看到已经编译完成的apk文件，把他装到虚拟机或者手机上就可以看到效果了。</p>
