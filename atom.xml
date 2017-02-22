@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.geekap.com/"/>
-  <updated>2017-02-22T12:19:17.000Z</updated>
+  <updated>2017-02-22T12:24:41.000Z</updated>
   <id>http://blog.geekap.com/</id>
   
   <author>
@@ -16,14 +16,14 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ReactNative开发流程</title>
+    <title>React-Native开发流程</title>
     <link href="http://blog.geekap.com/2017/02/22/React-Native%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/"/>
     <id>http://blog.geekap.com/2017/02/22/React-Native开发流程/</id>
     <published>2017-02-22T09:05:55.000Z</published>
-    <updated>2017-02-22T12:19:17.000Z</updated>
+    <updated>2017-02-22T12:24:41.000Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --></p>
-<h2 id="React-Native官方的介绍"><a href="#React-Native官方的介绍" class="headerlink" title="React Native官方的介绍:"></a><strong>React Native官方的介绍:</strong></h2><ul>
+<h2 id="React-Native官方的介绍"><a href="#React-Native官方的介绍" class="headerlink" title="React-Native官方的介绍:"></a><strong>React-Native官方的介绍:</strong></h2><ul>
 <li><p>React Native使你能够在Javascript和React的基础上获得完全一致的开发体验，构建世界一流的原生APP。</p>
 </li>
 <li><p>React Native着力于提高多平台开发的开发效率 —— 仅需学习一次，编写任何平台。(Learn once, write anywhere)。</p>
@@ -33,37 +33,31 @@
 </ul>
 <center><img src="http://upyun.geekap.com/ornament/dongtu1.gif" alt="动图"></center>
 
-<h2 id="接下来为大家奉上开发ReactNative应用的流程。"><a href="#接下来为大家奉上开发ReactNative应用的流程。" class="headerlink" title="接下来为大家奉上开发ReactNative应用的流程。"></a>接下来为大家奉上开发ReactNative应用的流程。</h2><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a><strong>开发环境</strong></h2><ul>
+<h2 id="接下来为大家奉上开发React-Native应用的流程。"><a href="#接下来为大家奉上开发React-Native应用的流程。" class="headerlink" title="接下来为大家奉上开发React-Native应用的流程。"></a>接下来为大家奉上开发React-Native应用的流程。</h2><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a><strong>开发环境</strong></h2><ul>
 <li>windows 10 专业版 1607</li>
 <li>Node 7.3.0</li>
 <li>Android Studio 1.5</li>
 <li>Java Development Kit 1.8.0_73</li>
 <li>Python 3.6</li>
 </ul>
-<p>一、 首先安装 <code>react-native-cli</code></p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g yarn react-native-cli</div></pre></td></tr></table></figure>
-<p>二、 测试安装(<code>Project</code>在这里代指工程目录名,可自行设定，最好为纯英文目录)。</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">react-native init Project</div><div class="line"></div><div class="line"><span class="built_in">cd</span> Project</div><div class="line"></div><div class="line">react-native run-android</div></pre></td></tr></table></figure>
+<h2 id="一、-首先安装-react-native-cli"><a href="#一、-首先安装-react-native-cli" class="headerlink" title="一、 首先安装 react-native-cli"></a><strong>一、 首先安装 <code>react-native-cli</code></strong></h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g yarn react-native-cli</div></pre></td></tr></table></figure>
+<h2 id="二、-测试安装-Project在这里代指工程目录名-可自行设定，最好为纯英文目录-。"><a href="#二、-测试安装-Project在这里代指工程目录名-可自行设定，最好为纯英文目录-。" class="headerlink" title="二、 测试安装(Project在这里代指工程目录名,可自行设定，最好为纯英文目录)。"></a><strong>二、 测试安装(<code>Project</code>在这里代指工程目录名,可自行设定，最好为纯英文目录)。</strong></h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">react-native init Project</div><div class="line"></div><div class="line"><span class="built_in">cd</span> Project</div><div class="line"></div><div class="line">react-native run-android</div></pre></td></tr></table></figure>
 <p><strong>有时运行上述代码后Packager可能不会自动运行，或者运行过程中断，这时运行以下代码:</strong></p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-native <span class="built_in">start</span></div></pre></td></tr></table></figure>
-<p>三、 现在你已经成功运行了项目，我们可以开始尝试动手改一改了：</p>
-<ul>
+<h2 id="三、-现在你已经成功运行了项目，我们可以开始尝试动手改一改了："><a href="#三、-现在你已经成功运行了项目，我们可以开始尝试动手改一改了：" class="headerlink" title="三、 现在你已经成功运行了项目，我们可以开始尝试动手改一改了："></a><strong>三、 现在你已经成功运行了项目，我们可以开始尝试动手改一改了：</strong></h2><ul>
 <li><p>把<code>Project\android\app\build\outputs\apk</code>目录中生成的APP安装到安卓虚拟机或者手机中</p>
 </li>
 <li><p>在安卓模拟器OR你的手机App中设置IP后就可以看到效果了</p>
-</li>
-</ul>
-<p><strong>打开APP后通过 手机摇一摇 或者 点击设置建，调出如下图设置菜单，点击<code>Dev Settings</code>选项。</strong></p>
+<p>  <strong>打开APP后通过 手机摇一摇 或者 点击设置建，调出如下图设置菜单，点击<code>Dev Settings</code>选项。</strong></p>
 <center><img src="http://oj5xzgnkr.bkt.clouddn.com/blog_170222_01.jpg" alt="图"></center>
 
-<p><strong>进入设置页面，点击<code>Debug server host</code>选项，输入 <code>YouIP:8081</code>保存到主页面菜单再点击<code>Reload</code>即可。</strong></p>
+<p>  <strong>进入设置页面，点击<code>Debug server host</code>选项，输入 <code>YouIP:8081</code>保存到主页面菜单再点击<code>Reload</code>即可。</strong></p>
 <center><img src="http://oj5xzgnkr.bkt.clouddn.com/blog_170222_02.jpg" alt="图"></center>
-
-<ul>
-<li>使用你喜欢的代码编辑器打开index.android.js并随便改上几行,并在APP中<code>Reload</code>即可看到页面效果。</li>
+</li>
+<li><p>使用你喜欢的代码编辑器打开index.android.js并随便改上几行,并在APP中<code>Reload</code>即可看到页面效果。</p>
+</li>
 </ul>
-<p>四、 接下来就是开发过程需要注意的</p>
-<ul>
+<h2 id="四、-接下来就是开发过程需要注意的"><a href="#四、-接下来就是开发过程需要注意的" class="headerlink" title="四、 接下来就是开发过程需要注意的"></a><strong>四、 接下来就是开发过程需要注意的</strong></h2><ul>
 <li><p>逻辑代码使用ES6语法。</p>
 </li>
 <li><p>页面使用FlexBox布局。</p>
@@ -72,8 +66,7 @@
 <pre><code><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source=&#123;&#123;<span class="attr">uri</span>:<span class="string">'文件名'</span>&#125;&#125;</div></pre></td></tr></table></figure>
 </code></pre></li>
 </ul>
-<p>五、 把制作完成的APP打包</p>
-<p>测试版打包:<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-native run-android</div></pre></td></tr></table></figure></p>
+<h2 id="五、-把制作完成的APP打包"><a href="#五、-把制作完成的APP打包" class="headerlink" title="五、 把制作完成的APP打包"></a><strong>五、 把制作完成的APP打包</strong></h2><p>测试版打包:<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-native run-android</div></pre></td></tr></table></figure></p>
 <p>正式版打包:(需要设置签名)</p>
 <ol>
 <li><p>切换到react-native工程根目录，先生成秘钥文件</p>
