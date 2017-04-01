@@ -9,7 +9,7 @@
     <title>React-Native开发流程 - 宋金涛博客</title>
     <meta name="author" content="宋金涛">
     
-        <meta name="keywords" content="Android,ReactNative,教程">
+        <meta name="keywords" content="Android,React-Native,教程">
     
     
     
@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://oj5xzgnkr.bkt.clouddn.com/blog_170222_01.jpg">
 <meta property="og:image" content="http://oj5xzgnkr.bkt.clouddn.com/blog_170222_02.jpg">
 <meta property="og:image" content="http://oj5xzgnkr.bkt.clouddn.com/blog_170222_03.png">
-<meta property="og:updated_time" content="2017-02-22T12:24:41.000Z">
+<meta property="og:updated_time" content="2017-02-22T12:31:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React-Native开发流程">
 <meta name="twitter:description" content="经过几天的奋战，终于把制作并打包了个美团App,现在把制作以及打包流程简单介绍给大家。">
@@ -239,7 +239,7 @@
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/ReactNative/">ReactNative</a>
+    <a class="category-link" href="/categories/React-Native/">React-Native</a>
 
 
     
@@ -256,7 +256,7 @@
                 
 <article class="post" itemscope itemType="http://schema.org/BlogPosting">
     
-        <span class="post-header-cover-caption caption">ReactNative开发流程</span>
+        <span class="post-header-cover-caption caption">React-Native开发流程</span>
     
     
     <div class="post-content markdown" itemprop="articleBody">
@@ -302,8 +302,8 @@
 <li><p>页面使用FlexBox布局。</p>
 </li>
 <li><p>若想将图片打包到app内，需要将文件放到 <code>Project\android\app\src\main\res\drawable-xhdpi</code> 目录下，<br>  并且引用的时候在Image加上source属性</p>
-<pre><code><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source=&#123;&#123;<span class="attr">uri</span>:<span class="string">'文件名'</span>&#125;&#125;</div></pre></td></tr></table></figure>
-</code></pre></li>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source=&#123;&#123;<span class="attr">uri</span>:<span class="string">'文件名'</span>&#125;&#125;</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h2 id="五、-把制作完成的APP打包"><a href="#五、-把制作完成的APP打包" class="headerlink" title="五、 把制作完成的APP打包"></a><strong>五、 把制作完成的APP打包</strong></h2><p>测试版打包:<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">react-native run-android</div></pre></td></tr></table></figure></p>
 <p>正式版打包:(需要设置签名)</p>
@@ -348,7 +348,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/Android/">Android</a> <a class="tag tag--primary tag--small t-link" href="/tags/ReactNative/">ReactNative</a> <a class="tag tag--primary tag--small t-link" href="/tags/教程/">教程</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/Android/">Android</a> <a class="tag tag--primary tag--small t-link" href="/tags/React-Native/">React-Native</a> <a class="tag tag--primary tag--small t-link" href="/tags/教程/">教程</a>
 
             </div>
         
@@ -357,7 +357,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/10/Vue学习笔记/"  data-tooltip="Vue之父与子间的通信">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -426,7 +426,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/10/Vue学习笔记/"  data-tooltip="Vue之父与子间的通信">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -681,6 +681,31 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a class="link-unstyled" href="http://blog.geekap.com/2017/03/10/Vue学习笔记/">
+                            <img class="media-image" src="http://upyun.geekap.com/gitblog-img/city-750.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://blog.geekap.com/2017/03/10/Vue学习笔记/">
+                            <h3 class="media-heading">Vue之父与子间的通信</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2017年3月10日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>在Vue中父与子、子与父组件之间如何传递消息呢?接下来为您揭秘…<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -688,7 +713,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                5 posts found
+                6 posts found
             </p>
         </div>
     </div>
