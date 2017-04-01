@@ -148,9 +148,9 @@
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="Android" scheme="http://blog.geekap.com/tags/Android/"/>
-    
       <category term="React-Native" scheme="http://blog.geekap.com/tags/React-Native/"/>
+    
+      <category term="Android" scheme="http://blog.geekap.com/tags/Android/"/>
     
   </entry>
   
@@ -182,9 +182,9 @@
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="Ionic" scheme="http://blog.geekap.com/tags/Ionic/"/>
-    
       <category term="Android" scheme="http://blog.geekap.com/tags/Android/"/>
+    
+      <category term="Ionic" scheme="http://blog.geekap.com/tags/Ionic/"/>
     
   </entry>
   
@@ -245,11 +245,11 @@
     
       <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
-      <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
-    
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
+    
+      <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -396,11 +396,11 @@
     
       <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
+      <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
+    
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
-    
-      <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
