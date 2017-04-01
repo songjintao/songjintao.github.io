@@ -6,22 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="宋金涛博客">
-    <title>Archives: 2017/1 - 宋金涛博客</title>
+    <title>Vue之父与子间的通信 - 宋金涛博客</title>
     <meta name="author" content="宋金涛">
+    
+        <meta name="keywords" content="Vue,教程,通信">
     
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)">
+    <meta name="description" content="在Vue中父与子、子与父组件之间如何传递消息呢?接下来为您揭秘…">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="宋金涛博客">
-<meta property="og:url" content="http://blog.geekap.com/archives/2017/01/index.html">
+<meta property="og:title" content="Vue之父与子间的通信">
+<meta property="og:url" content="http://blog.geekap.com/2017/03/08/Vue学习笔记/index.html">
 <meta property="og:site_name" content="宋金涛博客">
-<meta property="og:description" content="一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)">
+<meta property="og:description" content="在Vue中父与子、子与父组件之间如何传递消息呢?接下来为您揭秘…">
+<meta property="og:image" content="http://upyun.geekap.com/ornament/dongtu1.gif">
+<meta property="og:updated_time" content="2017-03-28T16:36:40.539Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="宋金涛博客">
-<meta name="twitter:description" content="一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)">
+<meta name="twitter:title" content="Vue之父与子间的通信">
+<meta name="twitter:description" content="在Vue中父与子、子与父组件之间如何传递消息呢?接下来为您揭秘…">
+<meta name="twitter:image" content="http://upyun.geekap.com/ornament/dongtu1.gif">
     
     
         
@@ -30,6 +35,12 @@
         <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/gravatar.jpg"/>
     
     
+        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/city-750.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://upyun.geekap.com/gitblog-img/city-750.jpg" />
+    
+    
+        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/cover.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://upyun.geekap.com/gitblog-img/cover.jpg" />
     
     
     <!--STYLES-->
@@ -50,7 +61,7 @@
         
     
 
-<header id="header" data-behavior="1">
+<header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
         <a class="header-title-link" href="/ ">宋金涛博客</a>
@@ -71,7 +82,7 @@
         
     
 
-<nav id="sidebar" data-behavior="1">
+<nav id="sidebar" data-behavior="4">
     <div class="sidebar-container">
         
             <div class="sidebar-profile">
@@ -204,172 +215,130 @@
 </nav>
 
             
-            <div id="main" data-behavior="1"
-                 class="
+        <div class="post-header-cover
+                    text-center
+                    post-header-cover--full"
+             style="background-image:url('http://upyun.geekap.com/gitblog-img/cover.jpg');"
+             data-behavior="4">
+            
+                <div class="post-header main-content-wrap text-center">
+    
+        <h1 class="post-title" itemprop="headline">
+            Vue之父与子间的通信
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2017-03-08T18:25:20+08:00">
+	
+		    3月 08, 2017
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Vue/">Vue</a>
+
+
+    
+</div>
+
+</div>
+            
+        </div>
+
+            <div id="main" data-behavior="4"
+                 class="hasCover
                         hasCoverMetaIn
-                        ">
+                        hasCoverCaption">
                 
-    <section class="postShorten-group main-content-wrap">
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <span class="post-header-cover-caption caption">Vue之父与子间的通信</span>
     
     
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/01/07/tranquilpeak主题的配置/">
-                            tranquilpeak主题的配置
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-01-07T17:12:21+08:00">
-	
-		    1月 07, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/建站/">建站</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>之前讲了如何利用Hexo在github上建立blog,以及如何更换主题，步骤并不复杂，但是配置主题可是就没那么简单了。<br>
-                    
-                        <a href="/2017/01/07/tranquilpeak主题的配置/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <!-- excerpt --></p>
+<p><center><img src="http://upyun.geekap.com/ornament/dongtu1.gif" alt="动图"></center></p>
+<h2 id="一、父组件向子组件传递信息"><a href="#一、父组件向子组件传递信息" class="headerlink" title="一、父组件向子组件传递信息:"></a>一、父组件向子组件传递信息:</h2><p><strong>(1)父组件</strong></p>
+<p>1.在父模块的子组件标签上传递参数<code>CompontentA</code>。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">compontent-a</span> <span class="attr">fromfather</span>=<span class="string">"I am father!"</span>&gt;</span><span class="tag">&lt;/<span class="name">compontent-a</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>2.使用import引入子组件<br>3.使用compontents注册子组件<code>components: { CompontentA }</code></p>
+<p><strong>(2)子组件</strong></p>
+<p>1.在子组件中通过props接收父组件传递来的数据<code>props: [&#39;fromfather&#39;]</code>。<br>2.在子组件内通过<code>this.fromfather</code>访问。</p>
+<h2 id="二、子组件向父组件传递信息"><a href="#二、子组件向父组件传递信息" class="headerlink" title="二、子组件向父组件传递信息:"></a>二、子组件向父组件传递信息:</h2><p><strong>(1)子组件</strong></p>
+<p>1.在子组件中触发clickMe函数时通过emit发送数据<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">clickMe () &#123;</div><div class="line">	<span class="keyword">this</span>.$emit(<span class="string">'sonToFather'</span>, <span class="keyword">this</span>.msg1)<span class="comment">//1.第一个参数是父组件中自定义的事件类型。2.第二个参数是子组件中要发送的数据。</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>(2)父组件</strong></p>
+<p>1.在父模块的子组件标签上自定义事件类型和自定义事件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">compontent-a</span> <span class="attr">v-on:sonToFather</span>=<span class="string">"listenSon"</span>&gt;</span><span class="tag">&lt;/<span class="name">compontent-a</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>2.使用import引入子组件<br>3.使用compontents注册子组件<code>components: { CompontentA }</code><br>4.可以在函数listenSon中直接使用从子组件传递来的数据<code>msg</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">listenSon(msg) &#123;</div><div class="line">    <span class="built_in">console</span>.log(msg)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
             
         </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
-            <a href="/2017/01/07/tranquilpeak主题的配置/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/peak-140 (1).jpg"/>
-                </div>
-            </a>
-            
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/01/06/CentOS 7 安装 Nginx/">
-                            CentOS 7.3 安装 Nginx
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-01-06T09:12:21+08:00">
-	
-		    1月 06, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/服务器/">服务器</a>
-
-
-    
-</div>
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Vue/">Vue</a> <a class="tag tag--primary tag--small t-link" href="/tags/教程/">教程</a>
 
             </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:<br>
-                    
-                        <a href="/2017/01/06/CentOS 7 安装 Nginx/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
         
-            <a href="/2017/01/06/CentOS 7 安装 Nginx/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/city-140.jpg"/>
-                </div>
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/22/React-Native开发流程/" data-tooltip="React-Native开发流程">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
             </a>
-            
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/01/02/博客建设分享以及学习规划/">
-                            博客建设分享及博客计划
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-01-02T17:12:21+08:00">
-	
-		    1月 02, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/建站/">建站</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上,虽然原来的wordpress文章无法在转移，不用担心，一大波好文章正正在来袭。<br>
-                    
-                        <a href="/2017/01/02/博客建设分享以及学习规划/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-            <a href="/2017/01/02/博客建设分享以及学习规划/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/car-6-140.jpg"/>
-                </div>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-google-plus"></i>
             </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
             
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">page 1 of 1</li>
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+    </div>
+</article>
 
 
 
@@ -380,6 +349,84 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/02/22/React-Native开发流程/" data-tooltip="React-Native开发流程">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2017/03/08/Vue学习笔记/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
             
         </div>
         
