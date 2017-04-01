@@ -55,7 +55,7 @@
     <link href="http://blog.geekap.com/2017/02/22/React-Native%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/"/>
     <id>http://blog.geekap.com/2017/02/22/React-Native开发流程/</id>
     <published>2017-02-22T09:05:55.000Z</published>
-    <updated>2017-04-01T11:21:16.000Z</updated>
+    <updated>2017-04-01T12:02:50.000Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --></p>
 <h2 id="React-Native官方的介绍"><a href="#React-Native官方的介绍" class="headerlink" title="React-Native官方的介绍:"></a><strong>React-Native官方的介绍:</strong></h2><ul>
@@ -139,18 +139,18 @@
     
     <summary type="html">
     
-      &lt;p&gt;经过几天的奋战，终于把制作并打包了个美团App,现在把制作以及打包流程简单介绍给大家。&lt;br&gt;
+      &lt;p&gt;经过几天的奋战，终于把制作并打包了个RN-APP,现在把制作以及打包流程简单介绍给大家。&lt;br&gt;
     
     </summary>
     
       <category term="React-Native" scheme="http://blog.geekap.com/categories/React-Native/"/>
     
     
-      <category term="React-Native" scheme="http://blog.geekap.com/tags/React-Native/"/>
-    
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
       <category term="Android" scheme="http://blog.geekap.com/tags/Android/"/>
+    
+      <category term="React-Native" scheme="http://blog.geekap.com/tags/React-Native/"/>
     
   </entry>
   
@@ -159,7 +159,7 @@
     <link href="http://blog.geekap.com/2017/02/09/ionic%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/"/>
     <id>http://blog.geekap.com/2017/02/09/ionic开发日志/</id>
     <published>2017-02-09T12:10:20.000Z</published>
-    <updated>2017-04-01T11:20:24.000Z</updated>
+    <updated>2017-04-01T12:05:38.100Z</updated>
     
     <content type="html"><![CDATA[<!-- excerpt --></p>
 <h2 id="Ionic官方的介绍"><a href="#Ionic官方的介绍" class="headerlink" title="Ionic官方的介绍:"></a>Ionic官方的介绍:</h2><p><strong>Ionic(ionicframework)一款接近原生的Html5移动App开发框架　会html css js就可以开发app　创建精彩的应用 从这里开始。</strong></p>
@@ -184,7 +184,7 @@
     
       <category term="Ionic" scheme="http://blog.geekap.com/tags/Ionic/"/>
     
-      <category term="ReactNative" scheme="http://blog.geekap.com/tags/ReactNative/"/>
+      <category term="Android" scheme="http://blog.geekap.com/tags/Android/"/>
     
   </entry>
   
@@ -243,13 +243,13 @@
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
       <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
-    
-      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -303,11 +303,11 @@
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
-    
       <category term="linux" scheme="http://blog.geekap.com/tags/linux/"/>
     
       <category term="Nginx" scheme="http://blog.geekap.com/tags/Nginx/"/>
+    
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -394,11 +394,11 @@
     
       <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
+      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
-    
-      <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
     
