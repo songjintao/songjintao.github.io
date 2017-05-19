@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>宋金涛博客</title>
-  <subtitle>宋金涛Blog</subtitle>
+  <title>丁文卓博客</title>
+  <subtitle>丁文卓Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.geekap.com/"/>
@@ -9,7 +9,7 @@
   <id>http://blog.geekap.com/</id>
   
   <author>
-    <name>宋金涛</name>
+    <name>丁文卓</name>
     
   </author>
   
@@ -245,11 +245,11 @@
     
       <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
+      <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
-    
-      <category term="主题" scheme="http://blog.geekap.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
@@ -396,11 +396,11 @@
     
       <category term="安装" scheme="http://blog.geekap.com/tags/%E5%AE%89%E8%A3%85/"/>
     
-      <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
-    
       <category term="建站" scheme="http://blog.geekap.com/tags/%E5%BB%BA%E7%AB%99/"/>
     
       <category term="Hexo" scheme="http://blog.geekap.com/tags/Hexo/"/>
+    
+      <category term="计划" scheme="http://blog.geekap.com/tags/%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
