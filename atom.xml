@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>丁文卓博客</title>
-  <subtitle>丁文卓Blog</subtitle>
+  <title>宋金涛博客</title>
+  <subtitle>宋金涛Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.geekap.com/"/>
@@ -9,7 +9,7 @@
   <id>http://blog.geekap.com/</id>
   
   <author>
-    <name>丁文卓</name>
+    <name>宋金涛</name>
     
   </author>
   
@@ -146,9 +146,9 @@
       <category term="React-Native" scheme="http://blog.geekap.com/categories/React-Native/"/>
     
     
-      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
       <category term="React-Native" scheme="http://blog.geekap.com/tags/React-Native/"/>
+    
+      <category term="教程" scheme="http://blog.geekap.com/tags/%E6%95%99%E7%A8%8B/"/>
     
       <category term="Android" scheme="http://blog.geekap.com/tags/Android/"/>
     
