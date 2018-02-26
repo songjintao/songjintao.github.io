@@ -6,22 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="宋金涛博客">
-    <title>Archives: 2017 - 宋金涛博客</title>
+    <title>React + Nodejs + Mongodb 全栈开发笔记 - 宋金涛博客</title>
     <meta name="author" content="宋金涛">
+    
+        <meta name="keywords" content="React,Node,Mongodb,教程">
     
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)">
+    <meta name="description" content="React + Nodejs + Mongodb 全栈开发笔记">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="宋金涛博客">
-<meta property="og:url" content="http://blog.geekap.com/archives/2017/index.html">
+<meta property="og:title" content="React + Nodejs + Mongodb 全栈开发笔记">
+<meta property="og:url" content="http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/index.html">
 <meta property="og:site_name" content="宋金涛博客">
-<meta property="og:description" content="一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)">
+<meta property="og:description" content="React + Nodejs + Mongodb 全栈开发笔记">
+<meta property="og:image" content="http://upyun.geekap.com/ornament/dongtu1.gif">
+<meta property="og:updated_time" content="2018-02-26T02:35:20.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="宋金涛博客">
-<meta name="twitter:description" content="一只热爱探索，热爱生活的快乐小极客(๓´˘`๓)">
+<meta name="twitter:title" content="React + Nodejs + Mongodb 全栈开发笔记">
+<meta name="twitter:description" content="React + Nodejs + Mongodb 全栈开发笔记">
+<meta name="twitter:image" content="http://upyun.geekap.com/ornament/dongtu1.gif">
     
     
         
@@ -30,6 +35,12 @@
         <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/gravatar.jpg"/>
     
     
+        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/city-750.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://upyun.geekap.com/gitblog-img/city-750.jpg" />
+    
+    
+        <meta property="og:image" content="http://upyun.geekap.com/gitblog-img/cover.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://upyun.geekap.com/gitblog-img/cover.jpg" />
     
     
     <!--STYLES-->
@@ -50,7 +61,7 @@
         
     
 
-<header id="header" data-behavior="1">
+<header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
         <a class="header-title-link" href="/ ">宋金涛博客</a>
@@ -71,7 +82,7 @@
         
     
 
-<nav id="sidebar" data-behavior="1">
+<nav id="sidebar" data-behavior="4">
     <div class="sidebar-container">
         
             <div class="sidebar-profile">
@@ -204,322 +215,180 @@
 </nav>
 
             
-            <div id="main" data-behavior="1"
-                 class="
+        <div class="post-header-cover
+                    text-center
+                    post-header-cover--full"
+             style="background-image:url('http://upyun.geekap.com/gitblog-img/cover.jpg');"
+             data-behavior="4">
+            
+                <div class="post-header main-content-wrap text-center">
+    
+        <h1 class="post-title" itemprop="headline">
+            React + Nodejs + Mongodb 全栈开发笔记
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2018-01-06T15:15:00+08:00">
+	
+		    1月 06, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/React/">React</a>
+
+
+    
+</div>
+
+</div>
+            
+        </div>
+
+            <div id="main" data-behavior="4"
+                 class="hasCover
                         hasCoverMetaIn
-                        ">
+                        hasCoverCaption">
                 
-    <section class="postShorten-group main-content-wrap">
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+        <span class="post-header-cover-caption caption">React + Nodejs + Mongodb</span>
     
     
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/03/08/Vue学习笔记/">
-                            Vue之父与子间的通信
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-03-08T18:25:20+08:00">
-	
-		    3月 08, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Vue/">Vue</a>
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <!-- excerpt --></p>
+<h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a><strong>开发环境</strong></h2><ul>
+<li>windows 10 专业版 1709</li>
+<li>react: v16.2.0</li>
+<li>node: v9.6.1</li>
+<li>mongoose: v5.0.7</li>
+<li>mongodb: v3.6.3</li>
+<li>express: v4.16.2</li>
+<li>redux: v3.7.2</li>
+<li>antd-mobile: v2.1.6</li>
+</ul>
+<center><img src="http://upyun.geekap.com/ornament/dongtu1.gif" alt="动图"></center>
 
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>在Vue中父与子、子与父组件之间如何传递消息呢?接下来为您揭秘…<br>
-                    
-                        <a href="/2017/03/08/Vue学习笔记/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
+<h2 id="一、-创建React项目骨架模板"><a href="#一、-创建React项目骨架模板" class="headerlink" title="一、 创建React项目骨架模板"></a>一、 创建React项目骨架模板</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create-react-app projectName</div></pre></td></tr></table></figure>
+<h2 id="二、-运行React项目，并修改"><a href="#二、-运行React项目，并修改" class="headerlink" title="二、 运行React项目，并修改"></a>二、 运行React项目，并修改</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run <span class="built_in">start</span></div></pre></td></tr></table></figure>
+<h2 id="三、-后端-Express"><a href="#三、-后端-Express" class="headerlink" title="三、 后端-Express"></a>三、 后端-Express</h2><ol>
+<li><p>安装express</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i express --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>建立server文件夹及server.js文件<br> 引入express并运行</p>
+</li>
+<li><p>安装nodemon (修改node文件自动重启服务)</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i nodemon -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>运行node项目<br>进入server文件夹运行 <code>nodemon server</code> 修改server文件查看效果</p>
+</li>
+</ol>
+<h2 id="四、-数据库-mongodb"><a href="#四、-数据库-mongodb" class="headerlink" title="四、 数据库-mongodb"></a>四、 数据库-mongodb</h2><ol>
+<li><p><a href="https://www.mongodb.com/download-center?jmp=nav#community" target="_blank" rel="external">下载Mongodb</a></p>
+</li>
+<li><p>运行 Mongodb(要保持运行状态 否则无法连接)</p>
+<p> 进入mongodb安装目录的etc目录运行下列命令</p>
+<p> 指定数据的存放目录并启动 需手动建立</p>
+ <figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.\mongod --dbpath "H:\mongodb\data\db"</div></pre></td></tr></table></figure>
+</li>
+<li><p>测试连接-继续在etc目录执行</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.\mongo</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="五、-数据库驱动"><a href="#五、-数据库驱动" class="headerlink" title="五、 数据库驱动"></a>五、 数据库驱动</h2><ol>
+<li><p>安装mongoose</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i mongoose --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>引入并连接数据库</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">const</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>)</div><div class="line"><span class="comment">// 连接mongo</span></div><div class="line"><span class="keyword">const</span> DB_URL = <span class="string">"mongodb://localhost:27017"</span></div><div class="line">mongoose.connect(DB_URL)</div><div class="line">mongoose.connection.on(<span class="string">'connected'</span>, ()=&gt; &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"****************mongo connect success**************"</span>)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>建立数据模型 model</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> User = mongoose.model(<span class="string">'user'</span>, <span class="keyword">new</span> mongoose.Schema(&#123;</div><div class="line">    <span class="attr">user</span>: &#123;<span class="attr">type</span>: <span class="built_in">String</span>, <span class="attr">require</span>: <span class="literal">true</span>&#125;,</div><div class="line">    <span class="attr">age</span>: &#123;<span class="attr">type</span>: <span class="built_in">Number</span>, <span class="attr">require</span>: <span class="literal">true</span>&#125;</div><div class="line">&#125;))</div></pre></td></tr></table></figure>
+</li>
+<li><p>增删改查</p>
+<p> <strong>增</strong></p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">app.get(<span class="string">"/create"</span>, (req, res)=&gt; &#123;</div><div class="line">    User.create(&#123;</div><div class="line">        <span class="attr">user</span>: <span class="string">"sjt"</span>,</div><div class="line">        <span class="attr">age</span>: <span class="number">21</span></div><div class="line">    &#125;, (err, doc)=&gt; &#123;</div><div class="line">        <span class="keyword">if</span>(!err) &#123;</div><div class="line">            <span class="built_in">console</span>.log(doc)</div><div class="line">        &#125;<span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">console</span>.log(err)</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p> <strong>删</strong></p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">app.get(<span class="string">"/remove"</span>, (req, res)=&gt; &#123;</div><div class="line">    User.remove(&#123;<span class="attr">age</span>:<span class="number">21</span>&#125;, (err, doc)=&gt; &#123;</div><div class="line">        res.send(doc)</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p> <strong>改</strong></p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">app.get(<span class="string">"/update"</span>,(req, res)=&gt; &#123;</div><div class="line">    User.update(&#123;<span class="string">"user"</span>: <span class="string">"sjt"</span>&#125;,&#123;<span class="string">"$set"</span>: &#123;<span class="attr">age</span>: <span class="number">18</span>&#125;&#125;, (err, doc)=&gt; &#123;</div><div class="line">        res.send(doc)</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p> <strong>查</strong></p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">app.get(<span class="string">"/find"</span>, (req, res)=&gt; &#123;</div><div class="line">    User.find(&#123;&#125;, (err,doc)=&gt; &#123;</div><div class="line">        res.json(doc)</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="建议："><a href="#建议：" class="headerlink" title="建议："></a><strong>建议：</strong></h2><p>建议更换npm的源为淘宝的源<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
+<p>验证是否成功<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm config get registry</div></pre></td></tr></table></figure></p>
             
         </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
-            <a href="/2017/03/08/Vue学习笔记/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/city-140.jpg"/>
-                </div>
-            </a>
-            
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/02/22/React-Native开发流程/">
-                            React-Native开发流程
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-02-22T17:05:55+08:00">
-	
-		    2月 22, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/React-Native/">React-Native</a>
-
-
-    
-</div>
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Mongodb/">Mongodb</a> <a class="tag tag--primary tag--small t-link" href="/tags/Node/">Node</a> <a class="tag tag--primary tag--small t-link" href="/tags/React/">React</a> <a class="tag tag--primary tag--small t-link" href="/tags/教程/">教程</a>
 
             </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>经过几天的奋战，终于把制作并打包了个RN-APP,现在把制作以及打包流程简单介绍给大家。<br>
-                    
-                        <a href="/2017/02/22/React-Native开发流程/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
         
-            <a href="/2017/02/22/React-Native开发流程/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/peak-140 (3).jpg"/>
-                </div>
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/08/Vue学习笔记/" data-tooltip="Vue之父与子间的通信">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
             </a>
-            
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/02/09/ionic开发日志/">
-                            Ionic开发流程
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-02-09T20:10:20+08:00">
-	
-		    2月 09, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Ionic/">Ionic</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>经过今天无数的踩坑，终于使用Ionic成功编译出一个安卓Demo应用。<br>
-                    
-                        <a href="/2017/02/09/ionic开发日志/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-            <a href="/2017/02/09/ionic开发日志/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/peak-140 (2).jpg"/>
-                </div>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-google-plus"></i>
             </a>
-            
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/01/07/tranquilpeak主题的配置/">
-                            tranquilpeak主题的配置
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-01-07T17:12:21+08:00">
-	
-		    1月 07, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/建站/">建站</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>之前讲了如何利用Hexo在github上建立blog,以及如何更换主题，步骤并不复杂，但是配置主题可是就没那么简单了。<br>
-                    
-                        <a href="/2017/01/07/tranquilpeak主题的配置/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-            <a href="/2017/01/07/tranquilpeak主题的配置/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/peak-140 (1).jpg"/>
-                </div>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-facebook-official"></i>
             </a>
-            
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/01/06/CentOS 7 安装 Nginx/">
-                            CentOS 7.3 安装 Nginx
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-01-06T09:12:21+08:00">
-	
-		    1月 06, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/服务器/">服务器</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>Nginx 是一个很牛的高性能Web和反向代理服务器, 它具有很多非常优越的特性:<br>
-                    
-                        <a href="/2017/01/06/CentOS 7 安装 Nginx/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-            <a href="/2017/01/06/CentOS 7 安装 Nginx/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/city-140.jpg"/>
-                </div>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-twitter"></i>
             </a>
-            
+        </li>
         
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
+        <li class="post-action">
             
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/01/02/博客建设分享以及学习规划/">
-                            博客建设分享及博客计划
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-01-02T17:12:21+08:00">
-	
-		    1月 02, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/建站/">建站</a>
-
-
-    
-</div>
-
-            </div>
+                <a class="post-action-btn btn btn--default" href="#">
             
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>经过几天的折腾，终于把github以及github-pages熟悉了一遍，并且在2017新年第一天成功的把博客系统运行在github-pages上,虽然原来的wordpress文章无法在转移，不用担心，一大波好文章正正在来袭。<br>
-                    
-                        <a href="/2017/01/02/博客建设分享以及学习规划/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-            <a href="/2017/01/02/博客建设分享以及学习规划/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://upyun.geekap.com/gitblog-img/car-6-140.jpg"/>
-                </div>
+                <i class="fa fa-list"></i>
             </a>
-            
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">page 1 of 1</li>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+    </div>
+</article>
 
 
 
@@ -530,6 +399,84 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/08/Vue学习笔记/" data-tooltip="Vue之父与子间的通信">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://blog.geekap.com/2018/01/06/React + Nodejs + Mongodb 全栈开发笔记/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
             
         </div>
         
